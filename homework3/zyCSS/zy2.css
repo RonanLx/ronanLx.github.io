@@ -1,0 +1,55 @@
+/* 设置整个页面的基本样式 */
+body {
+  /* 设置背景颜色为一个淡雅的浅蓝色 */
+  background-color: #f4f4f9;
+  /* 使用flex布局以便于居中内容 */
+  display: flex;
+  /* 水平居中内容 */
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* 容器样式 */
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 标题样式 */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 结果区域样式 */
+#outcome {
+  margin-top: 20px;
+  text-align: center; 
+  line-height: 1.6; /* 增加行高使文本更易读 */
+}
+
+/* 特定于“过”的样式 */
+#outcome span.pass {
+  font-weight: bold;
+  color: red; /* 使用红色突出显示需要喊“过”的数字 */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>计算偶数和</title>
+  <style>
+    /* 设置页面样式，使结果居中显示，并设置背景和字体样式 */
+    body {
+      /* 使用flex布局以便于居中内容 */
+      display: flex;
+      /* 水平居中对齐 */
+      justify-content: center;
+      /* 垂直居中对齐 */
+      align-items: center;
+      /* 设置body高度为视窗高度，确保内容能够居中显示 */
+      height: 100vh;
+      /* 设置默认字体大小 */
+      font-size: 30px;
+    }
+
+    /* 设置结果框的样式，包括内边距、背景色、圆角和阴影 */
+        #result {
+      /* 为结果区域设置内边距，提供内容与边框之间的空间 */
+      padding: 60px;
+      /* 设置背景颜色为浅灰色，增强可读性和界面美观 */
+      background-color: #f0f0f0;
+      /* 应用圆角边框，增加视觉柔和性 */
+      border-radius: 8px;
+      /* 添加轻微的阴影效果，提升元素的层次感和视觉效果 */
+      box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 显示计算结果的区域 -->
+  <div id="result">正在计算...</div>
+
+  <script>
+    // 计算1-100的偶数和
+    let sum = 0;
+    // 遍历1-100的所有偶数，从2开始，每次加2
+    for (let i = 2; i <= 100; i += 2) {
+      // 将偶数累加到sum中
+      sum += i;
+    }
+
+    // 获取页面元素并显示结果
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `1-100的偶数和为:<strong>${sum}</strong>`;
+  </script>
+</body>
+
+</html>
